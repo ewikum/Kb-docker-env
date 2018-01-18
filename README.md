@@ -25,19 +25,24 @@ docker-compose up --scale web=2 --build -d
  docker exec -it mysql-cont /initdb.sh
 ```
 
-###site access
+### site access
+
 [http://localhost](http://localhost)
 
-###DB access via phpmyadmin
+
+### DB access via phpmyadmin
+
 [http://localhost:8080](http://localhost:8080)
 
-###現在のDBのバックアップをDB_DUMPSフォールダーに取る
+
+### 現在のDBのバックアップをDB_DUMPSフォールダーに取る
+
 ```
  docker exec -it mysql-cont /dumpdb.sh
 ```
 
 
-###Docker conatainer をストップ
+### Docker conatainer をストップ
 
 ```
 docker-compose down
